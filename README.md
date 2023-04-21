@@ -8,15 +8,15 @@ The Intrustion Detector Systemn script is a comprehensive network traffic analys
 
 The script performs the following tasks:
 
-[1].**Fetch and cache malicious definitions:** The script downloads the latest definitions of malicious IPs, domains, and signatures from specified sources in the malicious_definitions.json configuration file. These definitions are cached to improve performance during analysis.
+1. **Fetch and cache malicious definitions:** The script downloads the latest definitions of malicious IPs, domains, and signatures from specified sources in the malicious_definitions.json configuration file. These definitions are cached to improve performance during analysis.
 
-[2].**Read pcap file:** The script reads the provided pcap file, which contains captured network traffic, using the pyshark library.
+2. **Read pcap file:** The script reads the provided pcap file, which contains captured network traffic, using the pyshark library.
 
-[3].**Analyze traffic:** Each packet in the pcap file is analyzed for signs of malicious activity. The script checks for known malicious IPs and domains, as well as traffic patterns indicative of attacks (e.g., brute force, DDoS).
+3. **Analyze traffic:** Each packet in the pcap file is analyzed for signs of malicious activity. The script checks for known malicious IPs and domains, as well as traffic patterns indicative of attacks (e.g., brute force, DDoS).
 
-[4].**Log detected threats:** If a packet is found to be malicious, the script logs information about the packet, the type of threat it represents, and any additional details that may aid in understanding the threat (e.g., source and destination IPs, domain, attack signature).
+4. **Log detected threats:** If a packet is found to be malicious, the script logs information about the packet, the type of threat it represents, and any additional details that may aid in understanding the threat (e.g., source and destination IPs, domain, attack signature).
 
-[5].**Output results:** The script provides a summary of detected threats, including the total number of threats and a breakdown of threats by category. This information can be printed to the console or saved to a specified output file.
+5. **Output results:** The script provides a summary of detected threats, including the total number of threats and a breakdown of threats by category. This information can be printed to the console or saved to a specified output file.
 
 ## Dependencies
 To run this script, you will need the following Python packages:
