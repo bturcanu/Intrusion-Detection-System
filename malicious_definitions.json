@@ -1,0 +1,112 @@
+{
+  "ip_sources": [
+    {
+      "name": "spamhaus_drop",
+      "url": "https://www.spamhaus.org/drop/drop.txt"
+    },
+    {
+      "name": "spamhaus_edrop",
+      "url": "https://www.spamhaus.org/drop/edrop.txt"
+    },
+    {
+      "name": "openphish_feed",
+      "url": "https://openphish.com/feed.txt"
+    },
+    {
+      "name": "tor_exit_nodes",
+      "url": "https://check.torproject.org/torbulkexitlist"
+    },
+    {
+      "name": "feodo_tracker",
+      "url": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt"
+    },
+    {
+      "name": "malware_domain_list",
+      "url": "https://www.malwaredomainlist.com/hostslist/hosts.txt"
+    },
+    {
+      "name": "greensnow_co",
+      "url": "https://blocklist.greensnow.co/greensnow.txt"
+    },
+    {
+      "name": "emerging_threats_compromised_ips",
+      "url": "https://rules.emergingthreats.net/blockrules/compromised-ips.txt"
+    },
+    {
+      "name": "abuse_ch_sslipblacklist",
+      "url": "https://sslbl.abuse.ch/blacklist/sslipblacklist.csv"
+    },
+    {
+      "name": "abuse_ch_urlhaus",
+      "url": "https://urlhaus.abuse.ch/downloads/csv/"
+    },
+    {
+      "name": "firehol_level1",
+      "url": "https://iplists.firehol.org/files/firehol_level1.netset"
+    },
+    {
+      "name": "firehol_level2",
+      "url": "https://iplists.firehol.org/files/firehol_level2.netset"
+    },
+    {
+      "name": "firehol_level3",
+      "url": "https://iplists.firehol.org/files/firehol_level3.netset"
+    },
+    {
+      "name": "ciarmy_malicious",
+      "url": "https://cinsscore.com/list/ci-badguys.txt"
+    }
+  ],
+  "domain_sources": [
+    {
+      "name": "malware_domain_list",
+      "url": "https://www.malwaredomainlist.com/hostslist/hosts.txt"
+    },
+    {
+      "name": "abuse_ch_urlhaus",
+      "url": "https://urlhaus.abuse.ch/downloads/csv/"
+    }
+  ],
+  "signature_sources": [
+    {
+      "name": "emerging_threats_suricata_malware",
+      "url": "https://rules.emergingthreats.net/open/suricata/rules/emerging-malware.rules"
+    },
+    {
+      "name": "emerging_threats_suricata_exploit_kit",
+      "url": "https://rules.emergingthreats.net/open/suricata/rules/emerging-exploit_kit.rules"
+    },
+    {
+      "name": "emerging_threats_suricata_phishing",
+      "url": "https://rules.emergingthreats.net/open/suricata/rules/emerging-phishing.rules"
+    },
+    {
+      "name": "emerging_threats_suricata_policy",
+      "url": "https://rules.emergingthreats.net/open/suricata/rules/emerging-policy.rules"
+    },
+    {
+      "name": "emerging_threats_snort_malware",
+      "url": "https://rules.emergingthreats.net/open/snort-2.9.0/rules/emerging-malware.rules"
+      },
+      {
+      "name": "emerging_threats_snort_exploit",
+      "url": "https://rules.emergingthreats.net/open/snort-2.9.0/rules/emerging-exploit.rules"
+      },
+      {
+      "name": "emerging_threats_snort_policy",
+      "url": "https://rules.emergingthreats.net/open/snort-2.9.0/rules/emerging-policy.rules"
+      },
+      {
+      "name": "emerging_threats_snort_web_client",
+      "url": "https://rules.emergingthreats.net/open/snort-2.9.0/rules/emerging-web_client.rules"
+      },
+      {
+      "name": "emerging_threats_snort_web_server",
+      "url": "https://rules.emergingthreats.net/open/snort-2.9.0/rules/emerging-web_server.rules"
+      },
+      {
+      "name": "emerging_threats_snort_web_specific_apps",
+      "url": "https://rules.emergingthreats.net/open/snort-2.9.0/rules/emerging-web_specific_apps.rules"
+      }
+      ]
+      }
