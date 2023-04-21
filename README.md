@@ -1,10 +1,22 @@
 # Intrustion-Detection-System
 
-**This script analyzes a given pcap file to detect malicious traffic, such as phishing attempts, malware delivery, brute force attacks, DDoS attacks, and C&C traffic.
+**This script is designed to analyze network traffic captured in pcap files and identify malicious activities, such as phishing attempts, malware delivery, brute force attacks, distributed denial of service (DDoS) attacks, and command and control (C&C) traffic.**
 
 ## Overview
 
-The script fetches updated malicious IP, domain, and signature definitions from specified sources and uses them to analyze the provided pcap file. It logs any detected malicious packets and the type of attack they are associated with.
+The Intrustion Detector Systemn script is a comprehensive network traffic analysis tool that helps network administrators and security professionals identify and mitigate potential security threats. By utilizing updated malicious IP, domain, and signature definitions, it inspects network traffic to detect patterns indicative of malicious behavior.
+
+The script performs the following tasks:
+
+[1].**Fetch and cache malicious definitions:** The script downloads the latest definitions of malicious IPs, domains, and signatures from specified sources in the malicious_definitions.json configuration file. These definitions are cached to improve performance during analysis.
+
+[2].**Read pcap file:** The script reads the provided pcap file, which contains captured network traffic, using the pyshark library.
+
+[3].**Analyze traffic:** Each packet in the pcap file is analyzed for signs of malicious activity. The script checks for known malicious IPs and domains, as well as traffic patterns indicative of attacks (e.g., brute force, DDoS).
+
+[4].**Log detected threats:** If a packet is found to be malicious, the script logs information about the packet, the type of threat it represents, and any additional details that may aid in understanding the threat (e.g., source and destination IPs, domain, attack signature).
+
+[5].**Output results:** The script provides a summary of detected threats, including the total number of threats and a breakdown of threats by category. This information can be printed to the console or saved to a specified output file.
 
 ## Dependencies
 To run this script, you will need the following Python packages:
@@ -36,4 +48,4 @@ For example, to analyze a pcap file named `example.pcap` and log the results in 
 
 ## Configuration
 
-To configure the sources for malicious definitions, edit the `malicious_definitions.json` file. You can add or remove sources for URLS to updating Intelligence Threat Feeds to malicious IPs, domains, and signatures as needed. The script will fetch and cache data from these sources before analyzing the pcap file.
+Configuration is designed for ease of use and can be customized to suit the specific needs of your network environment. To configure the sources for malicious definitions, edit the `malicious_definitions.json` file. You can add or remove sources for URLS to updating Intelligence Threat Feeds to malicious IPs, domains, and signatures as needed. The script will fetch and cache data from these sources before analyzing the pcap file.
