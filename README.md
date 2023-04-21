@@ -26,9 +26,9 @@ To run this script, you will need the following Python packages:
 
 You can install them using pip:
 
-'''console
+```console
 pip install pyshark requests
-'''
+```
 
 ## How to Use
 
@@ -44,9 +44,9 @@ The script can be run from the command line, with the following arguments:
 
 For example, to analyze a pcap file named `example.pcap` and log the results in `output.log`:
 
-'''console
+```console
 python IntrustionDetector.py -f example.pcap -o output.log -v
-'''
+```
 
 
 ## Configuration
