@@ -51,4 +51,4 @@ python IntrustionDetector.py -f example.pcap -o output.log -v
 
 ## Configuration
 
-Configuration is designed for ease of use and can be customized to suit the specific needs of your network environment. To configure the sources for malicious definitions, edit the `malicious_definitions.json` file. You can add or remove sources for URLS to updating Intelligence Threat Feeds to malicious IPs, domains, and signatures as needed. The script will fetch and cache data from these sources before analyzing the pcap file.
+Configuration is designed for ease of use and can be customized to suit the specific needs of your network environment. To configure the sources for malicious definitions, edit the `malicious_definitions.json` file. You can add or remove URLS to updating Intelligence Threat Feeds that contain malicious IPs, domains, and signatures as needed. The script will fetch and cache data from these sources before analyzing the pcap file.
