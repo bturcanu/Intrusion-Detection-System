@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Intrustion Detector Systemn script is a comprehensive network traffic analysis tool that helps network administrators and security professionals identify and mitigate potential security threats. By utilizing updated malicious IP, domain, and signature definitions, it inspects network traffic to detect patterns indicative of malicious behavior.
+The Intrustion Detector System script is a comprehensive network traffic analysis tool that helps network administrators and security professionals identify and mitigate potential security threats. By utilizing updated malicious IP, domain, and signature definitions, it inspects network traffic to detect patterns indicative of malicious behavior.
 
 The script performs the following tasks:
 
