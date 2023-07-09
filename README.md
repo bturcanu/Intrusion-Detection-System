@@ -1,4 +1,4 @@
-# Intrustion-Detection-System
+# Intrusion-Detection-System
 
 **This script is designed to analyze network traffic captured in pcap files and identify malicious activities, such as phishing attempts, malware delivery, brute force attacks, distributed denial of service (DDoS) attacks, and command and control (C&C) traffic.**
 
